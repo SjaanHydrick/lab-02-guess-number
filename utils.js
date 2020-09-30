@@ -1,3 +1,4 @@
+// unused function; couldn't decide how best to print dialogue while using functions
 
 export function compareNumbers(input){
     const guess = input.valueAsNumber;

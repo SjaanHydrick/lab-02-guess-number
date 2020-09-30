@@ -1,4 +1,6 @@
 // import functions and grab DOM elements
+import { compareNumbers } from './utils.js';
+
 
 const button = document.getElementById('protag');
 const dialogue = document.getElementById('dialogue');
@@ -61,7 +63,6 @@ buttonBottom.addEventListener('click', () => {
 });
 
 // Numbers Game and Outputs
-const correctNumber = Math.floor((Math.random() * 20) + 1);
 
 const tryOutputs = [
     '',
@@ -71,15 +72,21 @@ const tryOutputs = [
 
 let tryCounter = 0;
 
+const correctNumber = Math.floor((Math.random() * 20) + 1);
+
 buttonInput.addEventListener('click', () => {
-
+        
+    console.log(correctNumber);
     const guess = input.valueAsNumber;
+    const result = compareNumbers(guess, correctNumber);
 
-    if (guess > correctNumber) {
+    if (result === 1) {
         dialogue.textContent = 'Too High, Tasty Human!';
-    } else if (guess < correctNumber) {
+
+    } else if (result === -1) {
         dialogue.textContent = 'Too Low, Tasty Human!';
-    } else if (guess === correctNumber) {
+
+    } else if (result === 0) {
         buttonInput.style.visibility = 'hidden';
         resetButton.style.visibility = 'visible';
         input.style.visibility = 'hidden';
@@ -88,10 +95,12 @@ buttonInput.addEventListener('click', () => {
 
     tryCounter++;
     buttonInput.textContent = tryOutputs[tryCounter];
+    
     if (tryCounter === 3) {
         buttonInput.textContent = 'Uh-Oh...';
         dialogue.textContent = 'MUHAHAHAHAH!';
         input.style.visibility = 'hidden';
+
     } else if (tryCounter === 4){
         buttonInput.style.visibility = 'hidden';
         input.style.visibility = 'hidden';

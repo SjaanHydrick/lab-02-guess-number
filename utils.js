@@ -1,14 +1,12 @@
 // unused function; couldn't decide how best to print dialogue while using functions
 
-export function compareNumbers(input){
-    const guess = input.valueAsNumber;
-    const correctNumber = Math.floor((Math.random() * 20) + 1);
+export function compareNumbers(value1, value2){
 
-    if (guess > correctNumber) {
+    if (value1 > value2) {
         return 1;
-    } else if (guess < correctNumber) {
+    } else if (value1 < value2) {
         return -1;
-    } else if (guess === correctNumber) {
+    } else if (value1 === value2) {
         return 0;
     }
 

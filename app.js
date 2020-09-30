@@ -101,6 +101,7 @@ buttonInput.addEventListener('click', () => {
     }
 });
 
+// to reset the page
 resetButton.addEventListener('click', () => {
     window.location.reload();
 });

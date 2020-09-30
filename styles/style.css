@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+
+html, body {
+    height: 100%;
+}
+
+html  {
+    margin: auto;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/originals/38/26/a2/3826a231b23504a8a8159b12bf8633af.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    background-color: black;
+
+}
+
+button {
+    width: auto;
+    height: 50px;
+    background-color: firebrick;
+    border-radius: 15px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20pt;
+}
+
+#protag {
+    margin-top: 80px;
+    background-color: indianred;
+}
+
+#protag3 {
+    background-color: indianred;
+}
+
+#reset {
+    margin-bottom: 80px;
+}
+
+input {
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-size: 20pt;
+    
+}
+
+#grid  {
+    display: grid;
+    margin: auto;
+    position: relative;
+    height: 100%;
+    grid-template-columns: 60% 40%;
+    padding-left: 10px;
+}
+
+#moth-man {
+    height: 370px;
+    margin: 0;
+    padding: 0;
+    justify-self: baseline;
+}
+
+#dialogue {
+    height: 200px;
+    font-family: 'Nanum Brush Script', cursive;
+    color: gainsboro;
+    text-shadow: 1px 1px 10px tomato;
+    font-size: 40pt;
+    text-align: center;
+}

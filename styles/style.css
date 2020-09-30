@@ -20,18 +20,23 @@ body {
 }
 
 button {
+
     margin-top: 80px;
     margin-bottom: 80px;
     width: auto;
     height: 50px;
-    background-color: indianred;
+    background-color: firebrick;
     border-radius: 15px;
     font-family: 'Dosis', sans-serif;
     font-size: 20pt;
 }
 
-header {
+#protag {
+    background-color: indianred;
+}
 
+#protag3 {
+    background-color: indianred;
 }
 
 main {
@@ -46,15 +51,13 @@ input {
 
 }
 
-footer {
-
-}
-
 #grid  {
     display: grid;
+    margin: auto;
     position: relative;
     height: 100%;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
+    padding-left: 10px;
 }
 
 #moth-man {
@@ -70,5 +73,5 @@ footer {
     color: gainsboro;
     text-shadow: 1px 1px 10px tomato;
     font-size: 40pt;
-    text-align: right;
+    text-align: center;
 }

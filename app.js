@@ -64,11 +64,11 @@ buttonBottom.addEventListener('click', () => {
 
 // Numbers Game and Outputs
 
-const tryOutputs = [
-    '',
-    'Only Two Chances Left!',
-    'Only One Chance Left!',
-];
+// const tryOutputs = [
+//     '',
+//     'Only Two Chances Left!',
+//     'Only One Chance Left!',
+// ];
 
 let tryCounter = 0;
 
@@ -94,11 +94,16 @@ buttonInput.addEventListener('click', () => {
     }
 
     tryCounter++;
-    buttonInput.textContent = tryOutputs[tryCounter];
+    // buttonInput.textContent = tryOutputs[tryCounter];
     
-    if (tryCounter === 3) {
+    if (tryCounter === 1) {
+        buttonInput.textContent = 'Only Two Chances Left!';  
+
+    } else if (tryCounter === 2) {
+        buttonInput.textContent = 'Only One Chance Left!';
+
+    } else if (tryCounter === 3) {
         buttonInput.textContent = 'Uh-Oh...';
-        dialogue.textContent = 'MUHAHAHAHAH!';
         input.style.visibility = 'hidden';
 
     } else if (tryCounter === 4){

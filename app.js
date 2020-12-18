@@ -1,4 +1,3 @@
-// import functions and grab DOM elements
 import { compareNumbers } from './utils.js';
 
 
@@ -10,14 +9,12 @@ const buttonBottom = document.getElementById('protag2');
 const buttonInput = document.getElementById('protag3');
 const resetButton = document.getElementById('reset');
 
-// hidden elements
 mothMan.style.visibility = 'hidden';
 input.style.visibility = 'hidden';
 buttonBottom.style.visibility = 'hidden';
 buttonInput.style.visibility = 'hidden';
 resetButton.style.visibility = 'hidden';
 
-// to begin
 button.addEventListener('click', () => {
     button.style.visibility = 'hidden';
     mothMan.style.visibility = 'visible';
@@ -26,7 +23,6 @@ button.addEventListener('click', () => {
     buttonBottom.textContent = 'OHMIGOSH';
 });
 
-// game introduction
 const dialogueOutput = [
     '',
     'I have that effect on people',
@@ -61,8 +57,6 @@ buttonBottom.addEventListener('click', () => {
         input.style.visibility = 'visible';
     }
 });
-
-// Numbers Game and Outputs
 
 let tryCounter = 0;
 
@@ -112,7 +106,6 @@ buttonInput.addEventListener('click', () => {
     }
 });
 
-// to reset the page
 resetButton.addEventListener('click', () => {
     window.location.reload();
 });

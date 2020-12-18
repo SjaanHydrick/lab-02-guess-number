@@ -49,8 +49,7 @@ input {
     border-radius: 15px;
     font-family: 'Dosis', sans-serif;
     text-align: center;
-    font-size: 20pt;
-    
+    font-size: 20pt; 
 }
 
 #grid  {
@@ -63,8 +62,8 @@ input {
 }
 
 #moth-man {
-    height: 370px;
-    margin: 0;
+    height: 470px;
+    margin-left: -30%;
     padding: 0;
     justify-self: baseline;
 }
